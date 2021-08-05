@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backgroundss</title>
     <style>
-        body{
-           
-
-        }
+       
         .container{
-            width: 1344px;
-            height: 1344px;
-            background-image: url('index.jpg');
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-color: red;
-            color: white;
+            width:344px;
+            height: 1744px;
+            /* background-image: url('index.jpg'); */
+            /* background-repeat: no-repeat;
+            background-size:63px 45px;
+            background-color: rgb(255, 255, 255); */
+            /* background-position: bottom center ;it is vrey important- It ahows same result if we write center bottom */
+            /* background-attachment:fixed ; */
+
+            background: red url('index.jpg') no-repeat top center;
+            background-size: contain; /* Due to this bg size top right will nopt work - becaue jo niche hota h usi ko consideration milta h*/
+
+            color: rgb(255, 255, 255);
             border: 2px solid red;
         }
+        /* Always refer MDN reference if you are having any problem in any properties  - it has many amazing examples*/
     </style>
 </head>
 <body>
