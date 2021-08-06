@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            background-color: red;
+            margin: 30px;
+            height: 40px;
+        }
+        /* Yaha dono ki margin 30px h but dono ke beech space 60 px NHI  balki 30 px h because they are sharing the same margin 30px
+        If box1 would have 30 px and box2 would have 20px then they would share 30px  because 30px is greater than 20px - 
+        Yaha choti wali margin collapse ho jaeyengi  */
+        .box2{
+            background-color: aqua;
+            margin: 20px;
+            height: 20px;
+            padding: 2px;
+            border: 1px solid black;
+            /* box-sizing: content-box;Understand this with the help of MDN reference */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptas inventore. Vero ut totam iusto inventore quis neque cum similique consequatur natus, dolorem, ratione optio eligendi itaque! Nesciunt, aut ducimus!
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos ipsa ipsam dolores quod consequatur hic est doloribus quia laudantium? Autem fuga ratione sed, libero laborum voluptate odit eaque quidem dolorum tempora aut facere?
+    </div>
+</body>
+</html>
