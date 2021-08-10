@@ -14,28 +14,32 @@
         .box1{
             background-color: red;
             margin: 30px;
-            height: 40px;
+            height: 2320px;
+            width: 233px;
+            border: 2px solid black;
         }
         /* Yaha dono ki margin 30px h but dono ke beech space 60 px NHI  balki 30 px h because they are sharing the same margin 30px
         If box1 would have 30 px and box2 would have 20px then they would share 30px  because 30px is greater than 20px - 
         Yaha choti wali margin collapse ho jaeyengi  */
         .box2{
             background-color: aqua;
-            margin: 20px;
-            height: 20px;
-            padding: 2px;
-            border: 1px solid black;
-            /* box-sizing: content-box;Understand this with the help of MDN reference */
+            /* margin: 20px; */
+            height: 220px;
+            width: 100%;
+            padding:16px;
+            border: 5px solid grey;
             box-sizing: border-box;
+            /* It means that width and height of box includes the value of padding and border only not margin  */
         }
     </style>
 </head>
 <body>
     <div class="box1">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptas inventore. Vero ut totam iusto inventore quis neque cum similique consequatur natus, dolorem, ratione optio eligendi itaque! Nesciunt, aut ducimus!
+      <div class="box2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa illo, consectetur omnis, maiores praesentium optio laudantium voluptas, quae eligendi amet. Ut dolore numquam fuga explicabo aut! Quasi, eos veritatis.
+    </div>  
     </div>
-    <div class="box2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos ipsa ipsam dolores quod consequatur hic est doloribus quia laudantium? Autem fuga ratione sed, libero laborum voluptate odit eaque quidem dolorum tempora aut facere?
-    </div>
+    
 </body>
 </html>
