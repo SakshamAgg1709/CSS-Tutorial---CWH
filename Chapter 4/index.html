@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Fonts & Display</title>
+    <style>
+        .box1 {
+            /* display: inline; Inlinre property doesn't allow width and height:  ;  */
+            display: inline-block; 
+            /* Inline Block  property respects width, height margin and padding  */
+            /* Display NOne - Removes the space  and visibility of element  */
+            /* visibilty hidden only removes the  visibilty of element, its spce( width height )are still there */
+
+            width: 1433px;
+            height: 1034px;
+            background-color: red;
+            /* text-align: center; It is only for text insiode the div not for the whole div */
+        }
+
+        .box2 {
+            display: inline; /*Top and bottom margin and padding are  not allowed , left and right are allowed*/
+            width: 433px;
+            height: 1034px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit 
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere exercitationem 
+    </div>
+
+</body>
+
+</html>
