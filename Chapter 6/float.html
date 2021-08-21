@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .box1 {
+            height: 233px;
+            width: 344px;
+            float: left;
+            background-color: aqua;
+        }
+
+        .box2 {
+            height: 233px;
+            width: 344px;
+            float: right;
+            /* clear: right; */
+            /* Clear: Right - Mere right mein koi bhi element float nhi karega */
+            
+            clear: both;            /* Mere left aur right dono mein koi element float nhi hoga */ 
+            background-color: rgb(255, 125, 4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        BOx1
+    </div>
+
+    <div class="box2">
+        Box2
+    </div>
+
+</body>
+
+</html>

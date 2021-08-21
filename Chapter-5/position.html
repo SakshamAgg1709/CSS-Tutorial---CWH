@@ -7,20 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Postion</title>
     <style>
-        * {
+        /* * {
             margin: 0;
             padding: 0;
-        }
+            height: 990px;
+       } */
 
+        ul{
+            background-color: red;
+        }
         li {
-            display: inline;
+            /* display: inline; */
+            list-style: circle inside url('download.png');
+            /* inside- BUllet point will be inside the li
+            outside - BUllet point will be outside li */
         }
 
         header {
             background-color: black;
             color: white;
-
+            position: sticky;
+            top: 0;
             height: 70px;
+            z-index: 2;
         }
 
         p {
@@ -37,12 +46,19 @@
         }
 
         .box {
-            height: 30px;
-            width: 20px;
+            height: 130px;
+            width: 120px;
             background-color: green;
-            position: relative;
+            /* position: relative;
             left: 658px;
-            bottom: 42px;
+            bottom: 42px; */
+            /* position: absolute;
+            /* ye html element ko refer karega browser mein inspect karke dekho html element dekhna */
+            /* top: 0;
+            right: 0; */
+            /* left: 0; */
+            position: fixed;
+            right: 0px;
         }
 
         .box2 {
@@ -51,7 +67,7 @@
             background-color: rgb(161, 255, 161);
             position: relative;
         }
-
+      
         /* Default Position is static  */
     </style>
 </head>
@@ -79,6 +95,12 @@
             eius dolorum nisi architecto in.
         </div>
     </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Mango</li>
+    </ul>
 </body>
 
 </html>
