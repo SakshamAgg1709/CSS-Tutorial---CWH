@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Grids </title>
+    <style>
+        .container{
+            display: grid;
+            /* By default one column and multiple rows  */
+            grid-template-columns: auto 433px 33px;
+            /* grid-template-columns: auto auto auto; */
+            /* Auto - equal width for each column  */
+            /* grid-column-gap: 9px;
+            grid-row-gap: 5px; */
+            /* Shorthand for above  */
+            grid-gap:4px 7px ;
+            /* first- row and second is column  */
+            background-color: yellow;
+            grid-gap: 7px;
+            /* Rox and column both will get 7px of gap  */
+        }
+
+        .item{
+            background-color: wheat;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
