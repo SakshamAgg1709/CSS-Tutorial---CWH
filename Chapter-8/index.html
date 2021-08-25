@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 544px;
+        }
+
+        /* GO TO MDN REFERENCE TO UNDERSTAND TRANSFORM */
+        .box {
+            display: inline-block;
+            border: 2px solid black;
+            /* transform: translate(134px, 333px) rotate(0.25turn);
+            /* Rotate - We can use turn or wwe can  use deg */
+            /* transform:scale(4,7) ;
+            transform:scaleY(7) ;
+            transform:scaleX(4) ; */
+            /* transform: skew(4deg, 5deg);
+            transform-origin: 0; */
+            /* The values represent the following functions: matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ) */
+
+            /* FOR IMAGE - CODE BELOW */
+
+            /* transform: translate(33px, 45px) rotateX(34deg) ; */
+
+            /* transform: skew(3deg, 4deg);
+            transform: rotateX(34deg); */
+        }
+
+        img:hover {
+            width: 52vw;
+
+        }
+
+        img {
+            /* width: 22vw; */
+            transition-property: width;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-in;
+
+        }
+
+        /* STARTING AND ENDING WIDTH PROPERTY IS Sometimes IMPORTANT TO GIVE  */
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://source.unsplash.com/280x200">
+        </div>
+        <button id="btn">Toggle</button>
+    </div>
+    <script>
+        btn.addEventListener
+    </script>
+</body>
+
+</html>
