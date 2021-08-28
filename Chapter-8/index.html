@@ -39,10 +39,15 @@
         }
 
         img {
+            width: 146px;
+            height: 16px;
             /* width: 22vw; */
-            transition-property: width;
-            transition-duration: 0.1s;
-            transition-timing-function: ease-in;
+            /* transition-property: width;
+            transition-duration: 0.1s; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: steps(6, end);
+            transition-delay: 3s; */
+            transition: width 1s ease-in-out , height 1.5s ease-in-out 2s;
 
         }
 
@@ -52,16 +57,31 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="box">
-            <img src="https://source.unsplash.com/280x200">
+            <img id="myImage" src="https://source.unsplash.com/960x520/?nature,water">
+            <button id="btn">Toggle</button>
         </div>
-        <button id="btn">Toggle</button>
+         
     </div>
-    <script>
-        btn.addEventListener
-    </script>
 </body>
+<script>
+    // WE can use the IDs in Html as javascript variables 
+    // javascript mein alag se style property use karna hain 
+    myImage.style.width = '146px';
+    myImage.style.height = '16px';
+      
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '456px';
+        if(myImage.style.width === '546px'){
+            myImage.style.width = "146px";
+            // myImage.style.height = "455px";
+        }
+        else if(myImage.style.width === '146px'){
+            myImage.style.width = "546px";
+            // myImage.style.height = "16px";
 
+        } 
+    })
+</script>
 </html>
